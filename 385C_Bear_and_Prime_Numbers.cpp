@@ -20,6 +20,7 @@ ordered_multiset;
 // SOONER OR LATER --> WE GOT EM' THE DREAM <33
 // (إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا)
 /*
+//2
 https://github.com/InfernalMindv2/CP/blob/main/tips
 https://github.com/InfernalMindv2/CP/blob/main/templatecpp
 */
