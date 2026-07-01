@@ -66,15 +66,15 @@ void solve()
 	3n --> left and right
 	*/
 	vector<ll>pref(n+n+n+4),ar(n+n+n+4);
-	for(ll i=n;i<=n+n-1;i++)
+	for(ll i=n+1;i<=n+n;i++)
 		cin >> ar[i];
-	for(ll i=n;i<=n+n-1;i++)
+	for(ll i=n+1;i<=n+n;i++)
 	{
-		pref[i-n+1]=ar[i];
+		pref[i-n]=ar[i];
 	}
 	for(ll i=n+1;i<=n+n+n;i++)
 		pref[i]=pref[((i-1)%n) +1];
-	
+ 
 	for(ll i=1;i<=n+n+n;i++)
 		pref[i]+=pref[i-1];
 	/*
@@ -84,9 +84,9 @@ void solve()
 	2 * d - (summ of pref)
 	*/
 	ll ans=0;
-	for(ll i=n;i<=n+n-1;i++)
+	for(ll i=n+1;i<=n+n;i++)
 	{
-		ll res=(ar[i]*2*d+ar[i])-(pref[i+1+d]-pref[i+1-d-1]);
+		ll res=(ar[i]*2*d+ar[i])-(pref[i+d]-pref[i-d-1]);
 		if(res>0)
 			ans+=res;
 	}
